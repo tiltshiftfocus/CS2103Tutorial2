@@ -99,6 +99,10 @@ public class CityConnect {
 	 */
 	public static void main(String[] args) {
 		showToUser(WELCOME_MESSAGE);
+		userInput();
+	}
+
+	private static void userInput() {
 		while (true) {
 			System.out.print("Enter command:");
 			String userCommand = userInput.nextLine();
