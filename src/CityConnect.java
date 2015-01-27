@@ -88,7 +88,7 @@ public class CityConnect {
 	 * the I/O redirection technique. If not, only the first line of the input
 	 * text file will be processed.
 	 */
-	private static Scanner userInput = new Scanner(System.in);
+	private static Scanner scanner = new Scanner(System.in);
 
 	/*
 	 * ==============NOTE TO STUDENTS======================================
@@ -105,7 +105,7 @@ public class CityConnect {
 	private static void userInput() {
 		while (true) {
 			System.out.print("Enter command:");
-			String userCommand = userInput.nextLine();
+			String userCommand = scanner.nextLine();
 			String feedback = executeCommand(userCommand);
 			showToUser(feedback);
 		}
